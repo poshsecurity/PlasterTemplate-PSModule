@@ -1,6 +1,6 @@
 # Contributing
 
-I always love to have contributions to any of my modules!
+See an issue that you can help with? Have an idea for the next great feature?
 
 ## Issues
 
@@ -38,3 +38,22 @@ Pull requests are always more than welcome. Here are a few guidelines that shoul
     * Bug fixes: Consider test cases that would have failed before the change but pass now.
     * New features: Test cases need to ensure that new features function correctly and existing features still function as previously expected.
 * Ensure that any code you write aligns with community style guides.
+
+## Things that might get your Pull Request rejected
+There are often things in Pull Requests that might lead to a pull request being rejected, these include:
+
+* Malicious code.
+* Code that breaks previous functionality in a way that could be avoided.
+* Code that doesn't align with community style recommendations.
+* Code that fails Pester tests or PowerShell Script analyser
+* Code that is obviously plargarised
+
+## Issue Types
+
+I try to tag any open issue. Tags are a great way to work out how you might be able to help.
+
+* Bugs: Stuff that users or I have realised is broken/not functioning as expected. Typically I want to close these before working on any enhancements.
+* Enhancements: New features! Everyone alway wants new features right?
+* Good First Issue: These are simple bugs or enhancements that would be suitable for someone as their first issue. These are often more approachable for those unfamiliar with the code base, and are usually less time-consuming. If you are new to contributing to open-source or to PowerShell modules, then these could be great first steps.
+* Help Wanted: These are issues or bugs where I would really, really, love some assistance. They could be big or small bugs or enhancements.
+
