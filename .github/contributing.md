@@ -5,7 +5,7 @@ See an issue that you can help with? Have an idea for the next great feature? Th
 Here are some guidelines for contributing to this project. They are not hard rules, just guidelines.
 
 ## Code of Conduct
-Every project should aim to have a [code of conduct](CODE_OF_CONDUCT.md) that establishes how the project is governed and how everyone involved is expected to behave. 
+Every project should aim to have a [code of conduct](code-of-conduct.md) that establishes how the project is governed and how everyone involved is expected to behave. 
 
 You can report unacceptable behavior to [<%= $PLASTER_PARAM_EmailAddress &>](mailto:<%= $PLASTER_PARAM_EmailAddress %>).
 
@@ -78,9 +78,9 @@ Here are some tips on ensuring you create an excellentsuggestion:
 
 Looking ot make your first contribution? Congratulations you are taking the first steps into an amazing journey. 
 
-Don't know where to start? You can start by looking through the issues for the ```Good First Issue``` and ```Help Wanted``` tags:
-* [Good First Issue][beginner] are simple and should only take a few lines of code and tests to complete.
-* [Help Wanted][help-wanted] are more involved and will take more effort to complete.
+Don't know where to start? You can start by looking through the issues for the **Beginner** and **Help Wanted** tags:
+* **Beginner** are simple and should only take a few lines of code and tests to complete.
+* **Help Wanted** are more involved and will take more effort to complete.
 
 ### Pull Requests
 
