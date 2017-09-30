@@ -25,7 +25,7 @@ The reality is that code will contain bugs, even with through testing, issues ca
 
 * **Ensure you are running the latest version of the module.** If you are running an older version of the module, try updating the module and testing if the issue remains. If you installed the module from the [PowerShell Gallery](https://powershellgallery.com), use this command to update the module: ``` PS> Update-Module -Name <%= $PLASTER_PARAM_ModuleName %> ```.
 * **Ensure that you are using the CMDLet correctly.** Have you checked the help? Sometimes we assume we know how a specific function or CMDLet works, and it turns out we are wrong. The command ```Get-Help``` is your friend!
-* **Has the issue been reported before?** You might not be the only person who has reported the issue. Check out the [Issues](<>TODO<>) and look through any current Issues that may match the issue you are experiencing
+* **Has the issue been reported before?** You might not be the only person who has reported the issue. Check out the [Issues][Issues] and look through any current Issues that may match the issue you are experiencing
 
 ### Submitting a (good) bug report
 
@@ -113,3 +113,9 @@ There are often things in Pull Requests that might lead to a pull request being 
 * Code that doesn't align with community style recommendations.
 * Code that fails Pester tests or PowerShell Script analyser
 * Code that is obviously plargarised
+
+<!--
+
+    This templated is based upon the work by the Atom project, https://github.com/atom/atom/
+
+-->
