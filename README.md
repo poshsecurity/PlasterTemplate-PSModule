@@ -7,7 +7,7 @@ Authored by <%= $PLASTER_PARAM_FullName %>
 
 ## Installing <%= $PLASTER_PARAM_ModuleName %>
     
-The easiest way to get <%= $PLASTER_PARAM_ModuleName %> is using the [PowerShell Gallery](https://powershellgallery.com)!
+The easiest way to get <%= $PLASTER_PARAM_ModuleName %> is using the [PowerShell Gallery](https://powershellgallery.com/packages/<%= $PLASTER_PARAM_ModuleName %>/)!
 
 ### Inspecting the module
 Best practice is that you inspect modules prior to installing them. You can do this by saving the module to a local path:
@@ -31,4 +31,4 @@ PS> Update-Module -Name <%= $PLASTER_PARAM_ModuleName %>
 ```
 ## License
 
-[MIT](LICENSE.MD)
+[MIT](LICENSE.md)
