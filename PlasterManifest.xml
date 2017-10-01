@@ -2,12 +2,12 @@
 <plasterManifest
   schemaVersion="1.0" xmlns="http://www.microsoft.com/schemas/PowerShell/Plaster/v1">
   <metadata>
-    <name>FullModuleTemplate</name>
-    <id>d9df301f-04f5-48e8-aae4-320e50174f55</id>
+    <name>StandardModuleTemplate</name>
+    <id>a9c355a8-0228-4f58-8df9-3291dd997c1e</id>
     <version>0.0.1</version>
-    <title>Full Module Template</title>
+    <title>Standard Module Template</title>
     <description></description>
-    <author>Rob Sewell</author>
+    <author>Kieran Jacobsen</author>
     <tags></tags>
   </metadata>
   <parameters>
@@ -15,38 +15,59 @@
     <parameter name="ModuleName" type="text" prompt="Name of your module" />
     <parameter name="ModuleDesc" type="text" prompt="Brief description on this module" />
     <parameter name="Version" type="text" prompt="Initial module version" default="0.0.1" />
-    <parameter name="GitHubUserName" type="text" prompt="GitHub username" default="${PLASTER_PARAM_FullName}"/>
-    <parameter name="GitHubRepo" type="text" prompt="Github repo name for this module" default="${PLASTER_PARAM_ModuleName}"/>
+    <parameter name="EmailAddress" type="user-email" prompt="Contributer/Owner email" />
+    <parameter name="CompanyName" type="text" prompt="Name of the company or organisation or individual behind the module" />
 </parameters>
   <content>
-      <message>
-    Creating folder structure
+    <message>
+      Creating folder structure
     </message>
+    <file source='' destination='.github'/>
+    <file source='' destination='.vscode'/>
     <file source='' destination='docs'/>
     <file source='' destination='functions'/>
     <file source='' destination='internal'/>
     <file source='' destination='tests'/>
     <message>
-    Deploying common files
+      Deploying .github files
     </message>
-    <file source='appveyor.yml' destination=''/>
-    <file source='contributing.md' destination=''/>
-    <file source='LICENSE.txt'  destination=''/>
-    <templateFile source='install.md'   destination=''/>
-    <templateFile source='readme.md'   destination=''/>
-    <templateFile source='tests\Project.Tests.ps1' destination=''/>
-    <templateFile source='tests\Help.Tests.ps1' destination=''/>
+    <templateFile source='.github\code-of-conduct.md' destination=''/>
+    <templateFile source='.github\contributing.md' destination=''/>
+    <file source='.github\ISSUE_TEMPLATE.md' destination=''/>
+    <file source='.github\PULL_REQUEST_TEMPLATE.md' destination=''/>
+    <message>
+      Deploying .vscode files
+    </message>
+    <file source='.vscode\tasks.json' destination=''/>
+    <message>
+      Deploying docs files
+    </message>
+    <file source='docs\ReleaseNotes.txt' destination=''/>
+    <message>
+      Deploying test files
+    </message>
     <templateFile source='tests\Feature.Tests.ps1' destination=''/>
+    <templateFile source='tests\Project.Tests.ps1' destination=''/>
+    <templateFile source='tests\Help.Exceptions.ps1' destination=''/>
+    <templateFile source='tests\Help.Tests.ps1' destination=''/>
     <templateFile source='tests\Regression.Tests.ps1' destination=''/>
     <templateFile source='tests\Unit.Tests.ps1' destination=''/>
-    <templateFile source='tests\Help.Exceptions.ps1' destination=''/>
+    <message>
+      Deploying root directory files
+    </message>
+    <templateFile source='LICENSE.md'  destination=''/>
     <file source='module.psm1' destination='${PLASTER_PARAM_ModuleName}.psm1'/>
+    <templateFile source='readme.md' destination=''/>
+    <message>
+      Creating module manifest
+    </message>
     <newModuleManifest 
-    destination='${PLASTER_PARAM_ModuleName}.psd1' 
-    moduleVersion='$PLASTER_PARAM_Version' 
-    rootModule='${PLASTER_PARAM_ModuleName}.psm1' 
-    author='$PLASTER_PARAM_FullName' 
-    description='$PLASTER_PARAM_ModuleDesc' 
-    encoding='UTF8-NoBOM'/>
+      destination='${PLASTER_PARAM_ModuleName}.psd1' 
+      moduleVersion='$PLASTER_PARAM_Version' 
+      rootModule='${PLASTER_PARAM_ModuleName}.psm1' 
+      author='$PLASTER_PARAM_FullName' 
+      companyName='${PLASTER_PARAM_CompanyName}'
+      description='$PLASTER_PARAM_ModuleDesc' 
+      encoding='UTF8-NoBOM'/>
   </content>
 </plasterManifest>
