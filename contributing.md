@@ -5,7 +5,8 @@ See an issue that you can help with? Have an idea for the next great feature? Th
 Here are some guidelines for contributing to this project. They are not hard rules, just guidelines.
 
 ## Code of Conduct
-Every project should aim to have a [code of conduct](code-of-conduct.md) that establishes how the project is governed and how everyone involved is expected to behave. 
+
+This project maintains a [code of conduct](code-of-conduct.md) that establishes how the project is governed and how everyone involved is expected to behave.
 
 You can report unacceptable behavior to [<%= $PLASTER_PARAM_EmailAddress %>](mailto:<%= $PLASTER_PARAM_EmailAddress %>).
 
@@ -59,7 +60,7 @@ Got a killer idea for a new feature? Maybe you want to suggest a minor improveme
 
 ### Submitting a (good) enhancement suggestion
 
-Enhancements are tracked via [GitHub issues](https://guides.github.com/features/issues/) just a bugs are. To submit a suggestion, create an issue and provide the information requested in [the template](ISSUE_TEMPLATE.md). 
+Enhancements are tracked via [GitHub issues](https://guides.github.com/features/issues/) just a bugs are. To submit a suggestion, create an issue and provide the information requested in [the template](ISSUE_TEMPLATE.md).
 
 Here are some tips on ensuring you create an excellentsuggestion:
 
@@ -76,7 +77,7 @@ Here are some tips on ensuring you create an excellentsuggestion:
 
 ### Your First Contribution
 
-Looking ot make your first contribution? Congratulations you are taking the first steps into an amazing journey. 
+Looking ot make your first contribution? Congratulations you are taking the first steps into an amazing journey.
 
 Don't know where to start? You can start by looking through the issues for the **Beginner** and **Help Wanted** tags:
 * **Beginner** are simple and should only take a few lines of code and tests to complete.
@@ -84,7 +85,7 @@ Don't know where to start? You can start by looking through the issues for the *
 
 ### Pull Requests
 
-Pull requests are always more than welcome. When creating a pull request, ensure that you complete [the template](PULL_REQUEST_TEMPLATE.md). 
+Pull requests are always more than welcome. When creating a pull request, ensure that you complete [the template](PULL_REQUEST_TEMPLATE.md).
 
 Here are a few guidelines that should be followed:
 
@@ -106,6 +107,7 @@ Here are a few guidelines that should be followed:
 * Ensure that your branch is up-to-date to reduce the merge conflicts that could occur.you
 
 ### Things that might get your Pull Request rejected
+
 There are often things in Pull Requests that might lead to a pull request being rejected, these include:
 
 * Malicious code.
@@ -116,6 +118,6 @@ There are often things in Pull Requests that might lead to a pull request being 
 
 <!--
 
-    This templated is based upon the work by the Atom project, https://github.com/atom/atom/
+    This is based upon the work by the Atom project, https://github.com/atom/atom/
 
 -->
