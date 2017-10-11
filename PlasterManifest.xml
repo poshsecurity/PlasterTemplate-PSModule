@@ -11,63 +11,49 @@
     <tags></tags>
   </metadata>
   <parameters>
-    <parameter name="FullName" type="text" prompt="Module author's name" />
+    <parameter name="AuthorName" type="user-AuthorName" prompt="Module author's name" />
+    <parameter name="AuthorEmail" type="user-email" prompt="Contributer/Owner email" />
     <parameter name="ModuleName" type="text" prompt="Name of your module" />
-    <parameter name="ModuleDesc" type="text" prompt="Brief description on this module" />
+    <parameter name="ModuleDescription" type="text" prompt="Brief description on this module" />
     <parameter name="Version" type="text" prompt="Initial module version" default="0.0.1" />
-    <parameter name="EmailAddress" type="user-email" prompt="Contributer/Owner email" />
-    <parameter name="CompanyName" type="text" prompt="Name of the company or organisation or individual behind the module" />
+    <parameter name="CompanyName" type="text" prompt="Name of the company or organisation or individual behind the module" default=""/>
 </parameters>
   <content>
-    <message>
-      Creating folder structure
-    </message>
+    <message>Creating folder structure</message>
     <file source='' destination='.github'/>
     <file source='' destination='.vscode'/>
-    <file source='' destination='docs'/>
     <file source='' destination='functions'/>
     <file source='' destination='internal'/>
+    <file source='' destination='resources'/>
     <file source='' destination='tests'/>
-    <message>
-      Deploying .github files
-    </message>
-    <templateFile source='.github\code-of-conduct.md' destination=''/>
-    <templateFile source='.github\contributing.md' destination=''/>
+    <message>Deploying .github files</message>
     <file source='.github\ISSUE_TEMPLATE.md' destination=''/>
     <file source='.github\PULL_REQUEST_TEMPLATE.md' destination=''/>
-    <message>
-      Deploying .vscode files
-    </message>
+    <message>Deploying .vscode files</message>
+    <file source='.vscode\settings.json' destination=''/>
     <file source='.vscode\tasks.json' destination=''/>
-    <message>
-      Deploying docs files
-    </message>
-    <file source='docs\ReleaseNotes.txt' destination=''/>
-    <message>
-      Deploying test files
-    </message>
+    <message>Deploying test files</message>
     <templateFile source='tests\Feature.Tests.ps1' destination=''/>
-    <templateFile source='tests\Project.Tests.ps1' destination=''/>
     <templateFile source='tests\Help.Exceptions.ps1' destination=''/>
     <templateFile source='tests\Help.Tests.ps1' destination=''/>
+    <templateFile source='tests\Project.Tests.ps1' destination=''/>
     <templateFile source='tests\Regression.Tests.ps1' destination=''/>
     <templateFile source='tests\Unit.Tests.ps1' destination=''/>
-    <message>
-      Deploying root directory files
-    </message>
+    <message>Deploying root directory files</message>
+    <templateFile source='CHANGELOG.md' destination=''/>
+    <templateFile source='code-of-conduct.md' destination=''/>
+    <templateFile source='contributing.md' destination=''/>
     <templateFile source='LICENSE.md'  destination=''/>
     <file source='module.psm1' destination='${PLASTER_PARAM_ModuleName}.psm1'/>
     <templateFile source='readme.md' destination=''/>
-    <message>
-      Creating module manifest
-    </message>
-    <newModuleManifest 
-      destination='${PLASTER_PARAM_ModuleName}.psd1' 
-      moduleVersion='$PLASTER_PARAM_Version' 
-      rootModule='${PLASTER_PARAM_ModuleName}.psm1' 
-      author='$PLASTER_PARAM_FullName' 
+    <message>Creating module manifest</message>
+    <newModuleManifest
+      destination='${PLASTER_PARAM_ModuleName}.psd1'
+      moduleVersion='$PLASTER_PARAM_Version'
+      rootModule='${PLASTER_PARAM_ModuleName}.psm1'
+      author='$PLASTER_PARAM_AuthorName'
       companyName='${PLASTER_PARAM_CompanyName}'
-      description='$PLASTER_PARAM_ModuleDesc' 
+      description='$PLASTER_PARAM_ModuleDescription'
       encoding='UTF8-NoBOM'/>
   </content>
 </plasterManifest>
