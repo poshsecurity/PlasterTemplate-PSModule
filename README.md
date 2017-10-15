@@ -1,5 +1,7 @@
 # <%= $PLASTER_PARAM_ModuleName %>
 
+![Build Status](https://build.status.url.here)
+
 ## Description
 
 <%= $PLASTER_PARAM_ModuleDescription %>
