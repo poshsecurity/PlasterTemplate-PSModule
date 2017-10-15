@@ -42,6 +42,7 @@ I typically follow this workflow:
         AuthorEmail       = "Developer@PowerShellis.Cool"
         ModuleName        = "MyNewModule"
         ModuleDescription = "This is my awesome PowerShell Module!"
+        ModuleVersion     = "0.1"
     }
 
     PS> Invoke-Plaster @PlasterParameters
