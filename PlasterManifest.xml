@@ -4,7 +4,7 @@
   <metadata>
     <name>StandardModuleTemplate</name>
     <id>a9c355a8-0228-4f58-8df9-3291dd997c1e</id>
-    <version>0.0.1</version>
+    <version>1.0.0</version>
     <title>Standard Module Template</title>
     <description></description>
     <author>Kieran Jacobsen</author>
@@ -37,6 +37,7 @@
     <templateFile source='tests\Help.Tests.ps1' destination=''/>
     <templateFile source='tests\Project.Exceptions.txt' destination=''/>
     <templateFile source='tests\Project.Tests.ps1' destination=''/>
+    <file source='tests\README_TESTS.md' destination=''/>
     <templateFile source='tests\Unit.Tests.ps1' destination=''/>
     <message>Deploying root directory files</message>
     <templateFile source='CHANGELOG.md' destination=''/>
