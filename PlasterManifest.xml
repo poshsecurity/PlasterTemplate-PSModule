@@ -11,12 +11,11 @@
     <tags></tags>
   </metadata>
   <parameters>
-    <parameter name="AuthorName" type="user-AuthorName" prompt="Module author's name" />
+    <parameter name="AuthorName" type="user-fullname" prompt="Module author's name" />
     <parameter name="AuthorEmail" type="user-email" prompt="Contributer/Owner email" />
     <parameter name="ModuleName" type="text" prompt="Name of your module" />
     <parameter name="ModuleDescription" type="text" prompt="Brief description on this module" />
-    <parameter name="Version" type="text" prompt="Initial module version" default="0.0.1" />
-    <parameter name="CompanyName" type="text" prompt="Name of the company or organisation or individual behind the module" default=""/>
+    <parameter name="ModuleVersion" type="text" prompt="Initial module version" default="0.0.1" />
 </parameters>
   <content>
     <message>Creating folder structure</message>
@@ -34,10 +33,10 @@
     <file source='.vscode\tasks.json' destination=''/>
     <message>Deploying test files</message>
     <templateFile source='tests\Feature.Tests.ps1' destination=''/>
-    <templateFile source='tests\Help.Exceptions.ps1' destination=''/>
+    <templateFile source='tests\Help.Exceptions.txt' destination=''/>
     <templateFile source='tests\Help.Tests.ps1' destination=''/>
+    <templateFile source='tests\Project.Exceptions.txt' destination=''/>
     <templateFile source='tests\Project.Tests.ps1' destination=''/>
-    <templateFile source='tests\Regression.Tests.ps1' destination=''/>
     <templateFile source='tests\Unit.Tests.ps1' destination=''/>
     <message>Deploying root directory files</message>
     <templateFile source='CHANGELOG.md' destination=''/>
@@ -49,10 +48,10 @@
     <message>Creating module manifest</message>
     <newModuleManifest
       destination='${PLASTER_PARAM_ModuleName}.psd1'
-      moduleVersion='$PLASTER_PARAM_Version'
+      moduleVersion='$PLASTER_PARAM_ModuleVersion'
       rootModule='${PLASTER_PARAM_ModuleName}.psm1'
       author='$PLASTER_PARAM_AuthorName'
-      companyName='${PLASTER_PARAM_CompanyName}'
+      companyName='${PLASTER_PARAM_AuthorName}'
       description='$PLASTER_PARAM_ModuleDescription'
       encoding='UTF8-NoBOM'/>
   </content>
