@@ -43,6 +43,9 @@ I typically follow this workflow:
         ModuleName        = "MyNewModule"
         ModuleDescription = "This is my awesome PowerShell Module!"
         ModuleVersion     = "0.1"
+        ModuleFolders     = @("functions", "internal")
+        GitHub            = "Yes"
+        License           = "Yes"
     }
 
     PS> Invoke-Plaster @PlasterParameters
