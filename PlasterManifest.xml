@@ -60,7 +60,7 @@
         <message>Deploying root directory files</message>
         <templateFile source='CHANGELOG.md' destination=''/>
         <file source='module.psm1' destination='${PLASTER_PARAM_ModuleName}.psm1'/>
-        <templateFile source='readme.md' destination=''/>
+        <templateFile source='MODULE_README.md' destination=''/>
         <message>Creating module manifest</message>
         <newModuleManifest destination='${PLASTER_PARAM_ModuleName}.psd1' moduleVersion='$PLASTER_PARAM_ModuleVersion' rootModule='${PLASTER_PARAM_ModuleName}.psm1' author='$PLASTER_PARAM_AuthorName' companyName='${PLASTER_PARAM_AuthorName}' description='$PLASTER_PARAM_ModuleDescription' encoding='UTF8-NoBOM'/>
     </content>
