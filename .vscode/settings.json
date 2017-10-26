@@ -29,7 +29,7 @@
     "powershell.codeFormatting.newLineAfterOpenBrace": true, // Default: True
 
     // Places open brace on the same line as its associated statement.
-    "powershell.codeFormatting.openBraceOnSameLine": false, // Default: True
+    "powershell.codeFormatting.openBraceOnSameLine": true, // Default: True
 
     // Adds a space after a separator (',' and ';').
     "powershell.codeFormatting.whitespaceAfterSeparator": true, // Default: True
