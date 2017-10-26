@@ -10,9 +10,6 @@ if ($packages.Name  -contains "PSScriptAnalyzer") {
 
 $script:ModuleName = '<%= $PLASTER_PARAM_ModuleName %>'
 
-# Removes all versions of the module from the session before importing
-Get-Module $ModuleName | Remove-Module
-
 $ModuleBase = Split-Path -Parent $MyInvocation.MyCommand.Path
 
 # Get the list of Pester Tests we are going to skip
@@ -22,8 +19,6 @@ $PesterTestExceptions = Get-Content -Path "$ModuleBase\Project.Exceptions.txt"
 if ((Split-Path $ModuleBase -Leaf) -eq 'Tests') {
     $ModuleBase = Split-Path $ModuleBase -Parent
 }
-
-Import-Module $ModuleBase\$ModuleName.psd1 -PassThru -ErrorAction Stop | Out-Null
 
 Describe "PSScriptAnalyzer rule-sets" -Tag Build , ScriptAnalyzer {
 
