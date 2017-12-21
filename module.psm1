@@ -1,7 +1,5 @@
 # Taken from http://overpoweredshell.com/Working-with-Plaster/
 
-Export-ModuleMember -function (Get-ChildItem -Path "$PSScriptRoot\functions\*.ps1").basename
-
 $functionFolders = @('functions', 'internal', 'classes')
 ForEach ($folder in $functionFolders)
 {
@@ -13,7 +11,7 @@ ForEach ($folder in $functionFolders)
         ForEach ($function in $functions)
         {
             Write-Verbose -Message "  Importing $($function.BaseName)"
-            . $($function.FullName)
+            . $function.providerpath
         }
     }
 }
