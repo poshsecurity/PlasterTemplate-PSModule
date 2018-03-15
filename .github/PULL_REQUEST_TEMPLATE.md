@@ -2,7 +2,7 @@
 
 * This template is required. Any request that does not include enough information may be closed at the maintainers' discretion.
 * Have you (put an X between the brackets on each line to confirm):
-    * [ ] Written new test cases to ensure no regession bugs occur?
+    * [ ] Written new test cases to ensure no regression bugs occur?
     * [ ] Ensured all test cases are now passing?
     * [ ] Ensured that PowerShell Script Analyser issues and warnings are completely resolved?
     * [ ] Updated any help or documentation that may be impacted by your changes?
