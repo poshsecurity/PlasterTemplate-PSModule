@@ -25,7 +25,7 @@ Put an X between the brackets on each line to confirm you have completed them:
 
 **Operating System:** [Windows | Linux | MacOS]
 
-**Operating System Version:** [Version and Build, eg Wndows 10 Build 1709]
+**Operating System Version:** [Version and Build, e.g. Windows 10 Build 1709]
 
 **PowerShell Version:** [Use ```Get-Host```]
 
@@ -39,10 +39,10 @@ Put an X between the brackets on each line to confirm you have completed them:
 
 Any additional information, configuration or data that might be necessary to reproduce the issue.
 
-> Note: By filling an issue, you are expected to comply with this projects Code of Conduct.
+> Note: By filling an issue, you are expected to comply with this project's Code of Conduct.
 
 <!--
 
-    This templated is based upon the work by the Atom project, https://github.com/atom/atom/
+    This template is based upon the work by the Atom project, https://github.com/atom/atom/
 
 -->
