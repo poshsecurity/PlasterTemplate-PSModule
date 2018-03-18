@@ -18,7 +18,7 @@ You can report unacceptable behavior to [<%= $PLASTER_PARAM_AuthorEmail %>](mail
 
 ## Reporting Bugs/Issues
 
-The reality is that code will contain bugs, even with through testing, issues can get through. Following these guidelines will help the maintainers to understand the issue you have encountered, reproduce the problem and fix it! You might even find that you don't need to create one.
+The reality is that code will contain bugs, even with thorough testing, issues can get through. Following these guidelines will help the maintainers to understand the issue you have encountered, reproduce the problem and fix it! You might even find that you don't need to create one.
 
 > **Note:** If you find an issue that is Closed that seems like what you are experiencing, please open a **new** issue and include a link to the previous issue in your description.
 
@@ -26,7 +26,7 @@ The reality is that code will contain bugs, even with through testing, issues ca
 
 * **Ensure you are running the latest version of the module.** If you are running an older version of the module, try updating the module and testing if the issue remains. If you installed the module from the [PowerShell Gallery](https://powershellgallery.com), use this command to update the module: ``` PS> Update-Module -Name <%= $PLASTER_PARAM_ModuleName %> ```.
 * **Ensure that you are using the CMDLet correctly.** Have you checked the help? Sometimes we assume we know how a specific function or CMDLet works, and it turns out we are wrong. The command ```Get-Help``` is your friend!
-* **Has the issue been reported before?** You might not be the only person who has reported the issue. Check out the [Issues][Issues] and look through any current Issues that may match the issue you are experiencing
+* **Has the issue been reported before?** You might not be the only person who has reported the issue. Check out the [Issues][Issues] and look through any current Issues that may match the issue you are experiencing.
 
 ### Submitting a (good) bug report
 
@@ -50,25 +50,25 @@ Here are some tips on ensuring you create an excellent bug report:
 
 ## Suggesting New Features and Enhancements
 
-Got a killer idea for a new feature? Maybe you want to suggest a minor improvement or some totally new features? These guideliness will help maintainers understand your suggestion!
+Got a killer idea for a new feature? Maybe you want to suggest a minor improvement or some totally new features? These guidelines will help maintainers understand your suggestion!
 
 ### Before you submit an enhancement suggestion
 
 * **Ensure you are running the latest version of the module.** The feature you require might be included in a new version of the module. If you installed the module from the Gallery, use this command to update the module: ``` PS> Update-Module -Name <%= $PLASTER_PARAM_ModuleName %> ```.
 * **Ensure that you are using the CMDLet correctly.** Have you checked the help? Perhaps the feature has already been implemented but you just haven't discovered it yet! The command ```Get-Help``` is your friend!
-* **Has the feature been requested before?** You might not be the only person who has requested this new feature, if it has add a comment to the existing issue instead of opening a new one. Be sure to checkout closed issues as well, the feature may have been previously implemented or rejected.
+* **Has the feature been requested before?** You might not be the only person who has requested this new feature. If it has, add a comment to the existing issue instead of opening a new one. Be sure to checkout closed issues as well, the feature may have been previously implemented or rejected.
 
 ### Submitting a (good) enhancement suggestion
 
-Enhancements are tracked via [GitHub issues](https://guides.github.com/features/issues/) just a bugs are. To submit a suggestion, create an issue and provide the information requested in [the template](ISSUE_TEMPLATE.md).
+Enhancements are tracked via [GitHub issues](https://guides.github.com/features/issues/) just as bugs are. To submit a suggestion, create an issue and provide the information requested in [the template](ISSUE_TEMPLATE.md).
 
-Here are some tips on ensuring you create an excellentsuggestion:
+Here are some tips on ensuring you create an excellent suggestion:
 
-* **Enhancements should be actionable**, that is, something that can/should be included in the project. Does the enhancement fall inside or outside to scope of the module? Modules should closely align to a specific set of activities, for instance a database query CMDLet probably shouldn't be included in a module relating to network connections.
+* **Enhancements should be actionable**, that is, something that can/should be included in the project. Does the enhancement fall inside or outside the scope of the module? Modules should closely align to a specific set of activities, for instance a database query CMDLet probably shouldn't be included in a module relating to network connections.
 * **Use a clear descriptive title** for the issue that describes the suggestion.
 * **Describe the new functionality or enhancement**, provide a step-by-step description of how it would function.
 * **Describe the current behavior and expected behavior** you would like to see.
-* **Provide specific examples** including how the feature would work, error handling, validation etc.
+* **Provide specific examples** including how the feature would work, error handling, validation, etc.
 * **Describe why this would be useful** to implement this suggestion. Is this something other users might want or just something you require?
 * **Subscribe to notifications** so you can answer any follow-up questions, and assist in testing the final fixes for the issue.
 * **Just because you think the feature might be easy to implement, doesn't mean it is so**. New features could be simple, or they might require significant effort to implement, please be patient.
@@ -77,7 +77,7 @@ Here are some tips on ensuring you create an excellentsuggestion:
 
 ### Your First Contribution
 
-Looking ot make your first contribution? Congratulations you are taking the first steps into an amazing journey.
+Looking to make your first contribution? Congratulations, you are taking the first steps into an amazing journey.
 
 Don't know where to start? You can start by looking through the issues for the **Beginner** and **Help Wanted** tags:
 * **Beginner** are simple and should only take a few lines of code and tests to complete.
@@ -90,7 +90,7 @@ Pull requests are always more than welcome. When creating a pull request, ensure
 Here are a few guidelines that should be followed:
 
 * Each pull request should accomplish a clear goal. Ensure that you clearly state in the request what it accomplishes.
-    * Big fixes: What was the bug? How did you fix it?
+    * Bug fixes: What was the bug? How did you fix it?
     * New features: What is it? How is it used?
 * Provide a high level explanation of what you are changing, it makes it easier to review.
 * Keep requests small, as it:
@@ -104,8 +104,7 @@ Here are a few guidelines that should be followed:
     * New features: Test cases need to ensure that new features function correctly and existing features still function as previously expected.
 * Ensure that any code you write aligns with community style guides.
 * Don't include issue numbers in the PR title.
-* Ensure that your branch is up-to-date to reduce the merge conflicts that could occur.you
-
+* Ensure that your branch is up-to-date to reduce the merge conflicts that could occur.
 ### Things that might get your Pull Request rejected
 
 There are often things in Pull Requests that might lead to a pull request being rejected, these include:
@@ -113,8 +112,8 @@ There are often things in Pull Requests that might lead to a pull request being 
 * Malicious code.
 * Code that breaks previous functionality in a way that could be avoided.
 * Code that doesn't align with community style recommendations.
-* Code that fails Pester tests or PowerShell Script analyser
-* Code that is obviously plargarised
+* Code that fails Pester tests or PowerShell Script analyser.
+* Code that is obviously plagiarised.
 
 <!--
 
