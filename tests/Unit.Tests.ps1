@@ -10,7 +10,7 @@ if ((Split-Path $ModuleBase -Leaf) -eq 'Tests') {
     $ModuleBase = Split-Path $ModuleBase -Parent
 }
 
-## this variable is for the VSTS tasks and is to be used for refernecing any mock artifacts
+## This variable is for the VSTS tasks and is to be used for referencing any mock artifacts
 $Env:ModuleBase = $ModuleBase
 
 Import-Module $ModuleBase\$ModuleName.psd1 -PassThru -ErrorAction Stop | Out-Null

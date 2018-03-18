@@ -36,9 +36,9 @@ Once installed from the PowerShell Gallery, you can update it using:
 PS> Update-Module -Name <%= $PLASTER_PARAM_ModuleName %>
 ```
 
-### Removing <%= $PLASTER_PARAM_ModuleName %>
+### Uninstalling <%= $PLASTER_PARAM_ModuleName %>
 
-To remove <%= $PLASTER_PARAM_ModuleName %>:
+To uninstall <%= $PLASTER_PARAM_ModuleName %>:
 
 ``` PowerShell
 PS> Uninstall-Module -Name <%= $PLASTER_PARAM_ModuleName %>
@@ -48,7 +48,7 @@ PS> Uninstall-Module -Name <%= $PLASTER_PARAM_ModuleName %>
 
 Interested in contributing? Read how you can [Contribute](contributing.md) to <%= $PLASTER_PARAM_ModuleName %>
 
-This project is maintains a [Code of Conduct](code-of-conduct.md) that establishes how the project is governed and how everyone involved is expected to behave. You can report unacceptable behavior to [<%= $PLASTER_PARAM_AuthorEmail %>](mailto:<%= $PLASTER_PARAM_AuthorEmail %>).
+This project maintains a [Code of Conduct](code-of-conduct.md) that establishes how the project is governed and how everyone involved is expected to behave. You can report unacceptable behavior to [<%= $PLASTER_PARAM_AuthorEmail %>](mailto:<%= $PLASTER_PARAM_AuthorEmail %>).
 
 ## Release History
 
