@@ -1,6 +1,6 @@
 if (-not(Get-Module -ListAvailable -Name "PSScriptAnalyzer")) {
     Write-Warning "Installing latest version of PSScriptAnalyzer"
-    #install PSScriptAnalyzer
+    # Install PSScriptAnalyzer
     Install-Module PSScriptAnalyzer -Force -Scope CurrentUser
 }
 
