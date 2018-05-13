@@ -1,11 +1,7 @@
-$packages = get-package
-if ($packages.Name  -contains "PSScriptAnalyzer") {
-    #PSScriptAnalyzer is installed on the system
-} else {
-    Write-Output "Installing latest version of PSScriptAnalyzer"
-
-    #install PSScriptAnalyzer
-    Install-Package PSScriptAnalyzer -Force -Scope CurrentUser
+if (-not(Get-Module -ListAvailable -Name "PSScriptAnalyzer")) {
+    Write-Warning "Installing latest version of PSScriptAnalyzer"
+    # Install PSScriptAnalyzer
+    Install-Module PSScriptAnalyzer -Force -Scope CurrentUser
 }
 
 $script:ModuleName = '<%= $PLASTER_PARAM_ModuleName %>'
