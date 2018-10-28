@@ -51,7 +51,8 @@
             <file source='' destination='classes' condition='$PLASTER_PARAM_ModuleFolders -contains "classes"'/>
         <message condition='$PLASTER_PARAM_GitHub -like "Yes"'>Creating GitHub folder and files</message>
             <file source='' destination='.github' condition='$PLASTER_PARAM_GitHub -eq "Yes"'/>
-            <file source='.github\ISSUE_TEMPLATE.md' destination='' condition='$PLASTER_PARAM_GitHub -eq "Yes"'/>
+            <file source='.github\ISSUE_TEMPLATE\Bug_report.md' destination='' condition='$PLASTER_PARAM_GitHub -eq "Yes"'/>
+            <file source='.github\ISSUE_TEMPLATE\Feature_request.md' destination='' condition='$PLASTER_PARAM_GitHub -eq "Yes"'/>
             <file source='.github\PULL_REQUEST_TEMPLATE.md' destination='' condition='$PLASTER_PARAM_GitHub -eq "Yes"'/>
             <templateFile source='code-of-conduct.md' destination='' condition='$PLASTER_PARAM_GitHub -eq "Yes"'/>
             <templateFile source='contributing.md' destination='' condition='$PLASTER_PARAM_GitHub -eq "Yes"'/>
